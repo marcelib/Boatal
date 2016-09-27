@@ -26,7 +26,7 @@ spring:
         url: jdbc:postgresql://localhost:5432/Boatal
         name:
         username: Boatal
-        password:
+        password: topKekDupa123
     jpa:
         database-platform: com.marcelib.boatal.domain.util.FixedPostgreSQL82Dialect
         database: POSTGRESQL
@@ -36,10 +36,13 @@ spring:
             hibernate.cache.use_query_cache: false
             hibernate.generate_statistics: true
     mail:
-        host: localhost
-        port: 25
-        username:
-        password:
+            host: smtp.gmail.com
+            port: 587
+            username: boatalregistry
+            password: topKekDupa123
+            protocol: smtp
+            properties.mail.smtp:
+                starttls.enable: true
     messages:
         cache-seconds: 1
     thymeleaf:
